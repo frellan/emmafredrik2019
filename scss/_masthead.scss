@@ -19,10 +19,20 @@ header.masthead {
   .page-heading,
   .post-heading,
   .site-heading {
-    padding: 200px 0 150px;
     color: white;
-    @media only screen and (min-width: 768px) {
-      padding: 200px 0 300px 0;
+
+    &.home {
+      padding: 200px 0 150px;
+      @media only screen and (min-width: 768px) {
+        padding: 200px 0 300px 0;
+      }
+    }
+
+    &.default {
+      padding: 150px 0;
+      @media only screen and (min-width: 768px) {
+        padding: 200px 0;
+      }
     }
   }
   .page-heading,

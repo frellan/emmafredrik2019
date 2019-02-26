@@ -168,7 +168,7 @@ img::-moz-selection {
 }
 
 header.masthead {
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   background: no-repeat center center;
   background-color: #868e96;
   background-attachment: scroll;
@@ -189,15 +189,34 @@ header.masthead .overlay {
 header.masthead .page-heading,
 header.masthead .post-heading,
 header.masthead .site-heading {
-  padding: 200px 0 150px;
   color: white;
 }
 
+header.masthead .page-heading.home,
+header.masthead .post-heading.home,
+header.masthead .site-heading.home {
+  padding: 200px 0 150px;
+}
+
 @media only screen and (min-width: 768px) {
-  header.masthead .page-heading,
-  header.masthead .post-heading,
-  header.masthead .site-heading {
+  header.masthead .page-heading.home,
+  header.masthead .post-heading.home,
+  header.masthead .site-heading.home {
     padding: 200px 0 300px 0;
+  }
+}
+
+header.masthead .page-heading.default,
+header.masthead .post-heading.default,
+header.masthead .site-heading.default {
+  padding: 150px 0;
+}
+
+@media only screen and (min-width: 768px) {
+  header.masthead .page-heading.default,
+  header.masthead .post-heading.default,
+  header.masthead .site-heading.default {
+    padding: 200px 0;
   }
 }
 

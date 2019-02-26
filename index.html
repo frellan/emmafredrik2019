@@ -66,16 +66,16 @@
             <a class="nav-link" href="index.html">Startsida</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="about.html">Boende</a>
+            <a class="nav-link" href="accomodation.html">Boende</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="post.html">Toastmastrar</a>
+            <a class="nav-link" href="toastmasters.html">Toastmastrar</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contact.html">OSA</a>
+            <a class="nav-link" href="osa.html">OSA</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contact.html">Övrigt</a>
+            <a class="nav-link" href="#">Övrigt</a>
           </li>
         </ul>
       </div>
@@ -88,7 +88,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
-          <div class="site-heading">
+          <div class="site-heading home">
             <h3>Välkommen till</h3>
             <h1>Emma och Fredriks Bröllop</h1>
             <span class="subheading">13 Juli 2019</span>
@@ -165,22 +165,19 @@
   <script src="js/clean-blog.min.js"></script>
 
   <script>
-  var second = 1000,
-    minute = second * 60,
-    hour = minute * 60,
-    day = hour * 24;
+  var second = 1000, minute = second * 60, hour = minute * 60, day = hour * 24;
 
   var countDown = new Date('Jul 13, 2019 15:00:00').getTime(),
-      x = setInterval(function() {
+    x = setInterval(function() {
 
-        let now = new Date().getTime(),
-            distance = countDown - now;
+      let now = new Date().getTime(),
+          distance = countDown - now;
 
-        document.getElementById('days').innerText = Math.floor(distance / (day)),
-          document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour)),
-          document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute)),
-          document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
-      }, second)
+      document.getElementById('days').innerText = Math.floor(distance / (day)),
+        document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour)),
+        document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute)),
+        document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
+    }, second)
   </script>
 
 </body>

@@ -1,44 +1,40 @@
 // Styling for the post page
-.post-preview {
-  > a {
-    color: $gray-900;
-    &:focus,
-    &:hover {
-      text-decoration: none;
-      color: $primary;
+.info-section {
+  display: flex;
+  margin: 50px 0;
+
+  .pic {
+    padding-top: 66px;
+
+    img {
+      object-fit: cover;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
     }
   }
 
-  > .post-title {
-    font-size: 30px;
-    margin-top: 30px;
-    margin-bottom: 10px;
-  }
-  > .post-subtitle {
-    font-weight: 300;
-    margin: 0 0 10px;
-  }
+  .content {
+    padding-left: 30px;
 
-  > .post-meta {
-    font-size: 18px;
-    font-style: italic;
-    margin-top: 0;
-    color: $gray-600;
-    > a {
-      text-decoration: none;
-      color: $gray-900;
-      &:focus,
-      &:hover {
-        text-decoration: underline;
-        color: $primary;
-      }
+    .title {
+      font-size: 30px;
+      font-weight: 500;
+      margin-bottom: 15px;
     }
-  }
-  @media only screen and (min-width: 768px) {
-    > a {
-      > .post-title {
-        font-size: 36px;
-      }
+  
+    .text {
+      font-size: 18px;
+      color: $gray-700;
+      font-weight: 300;
+      margin: 0 0 10px;
+    }
+  
+    .meta {
+      font-size: 18px;
+      // font-style: italic;
+      margin-top: 0;
+      color: $gray-600;
     }
   }
 }

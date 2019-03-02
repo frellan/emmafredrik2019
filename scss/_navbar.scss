@@ -18,10 +18,14 @@
   .navbar-nav {
     > li.nav-item {
       > a {
-        font-size: 12px;
+        font-size: 14px;
         font-weight: 800;
         letter-spacing: 1px;
         text-transform: uppercase;
+
+        &.active {
+          border-bottom: 2px solid white;
+        }
       }
     }
   }
@@ -39,8 +43,9 @@
     .navbar-nav {
       margin: auto;
       > li.nav-item {
+        font-size: 18px;
         > a {
-          padding: 15px 20px 10px 20px;;
+          margin: 8px 12px 10px 12px;
           color: $white;
           &:focus,
           &:hover {
@@ -80,10 +85,15 @@
       .navbar-nav {
         > li.nav-item {
           > a {
+            padding: 15px 20px 12px 20px;
+            margin: 0;
             color: $gray-900;
             &:focus,
             &:hover {
               color: $primary;
+            }
+            &.active {
+              border-bottom: 2px solid $gray-900;
             }
           }
         }

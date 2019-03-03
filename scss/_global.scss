@@ -84,7 +84,7 @@ img::-moz-selection {
 }
 
 .container-fluid {
-  @media only screen and (max-width: 1100px) {
+  @media only screen and (max-width: 1023px) {
     background-image: none !important;
   }
 }
@@ -118,5 +118,13 @@ img::-moz-selection {
 
   @media only screen and (max-width: 800px) {
     font-size: 1.5rem;
+  }
+}
+
+.welcome {
+  background-size: cover;
+
+  @media only screen and (max-width: 1674px) {
+    background-size: contain;
   }
 }

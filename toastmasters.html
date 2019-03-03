@@ -19,7 +19,12 @@
 
   <!-- Custom styles for this template -->
   <link href="css/clean-blog.min.css" rel="stylesheet">
-
+  <style>
+  .pic {
+    border-radius: 50%;
+    width: 100%;
+  }
+  </style>
 </head>
 
 <body>
@@ -67,7 +72,7 @@
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="site-heading default">
-            <h1>Toastmastrar</h1>
+            <h1 class="bold">Toastmastrar</h1>
           </div>
         </div>
       </div>
@@ -75,14 +80,31 @@
   </header>
 
   <!-- Main Content -->
-  <div class="container-fluid" style="background-image: url('img/leafs.jpeg'); background-size: cover;">
+  <div class="container-fluid" style="
+    background-image: url('img/leafs.jpeg');
+    background-size: cover;
+    background-color: grey;
+    background-blend-mode: screen;
+  ">
 
     <div class="container">
+      <div class="row" style="margin-bottom: 80px;">
+        <div class="col-md-3">
+          <img src="img/sebbe.jpg" class="pic">
+        </div>
+        <div class="col-md-6" style="margin-left: 2rem;">
+          <h2 class="bold">Sebastian Ringqvist</h2>
+          <p>Barndomskamrat till brudgummen tillika hedersgäst på bröllopet.</p>
+        </div>
+      </div>
+
       <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
-  
+        <div class="col-md-3">
+          <img src="img/martin2.jpg" class="pic">
+        </div>
+        <div class="col-md-6" style="margin-left: 2rem;">
+          <h2 class="bold">Martin Bertholdsson</h2>
           <p>Info...</p>
-  
         </div>
       </div>
 

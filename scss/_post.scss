@@ -16,6 +16,7 @@
 
   .content {
     padding-left: 30px;
+    text-align: center;
 
     .title {
       font-size: 30px;
@@ -32,7 +33,6 @@
   
     .meta {
       font-size: 18px;
-      // font-style: italic;
       margin-top: 0;
       color: $gray-600;
     }
